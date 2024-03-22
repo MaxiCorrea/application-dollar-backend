@@ -1,9 +1,10 @@
 package com.maxicorrea.github.applicationdollarbackend.application.usecases;
 
+import java.util.List;
 import com.maxicorrea.github.applicationdollarbackend.application.ports.input.DisplayHomeInputPort;
 import com.maxicorrea.github.applicationdollarbackend.application.ports.output.RetriveHomeOutputPort;
 import com.maxicorrea.github.applicationdollarbackend.common.UseCase;
-import com.maxicorrea.github.applicationdollarbackend.domain.Home;
+import com.maxicorrea.github.applicationdollarbackend.domain.Dollar;
 
 @UseCase
 public class ShowHomeUseCase implements DisplayHomeInputPort {
@@ -15,7 +16,7 @@ public class ShowHomeUseCase implements DisplayHomeInputPort {
   }
 
   @Override
-  public Home execute() {
+  public List<Dollar> execute() {
     return retriveHomeOutputPort.execute();
   }
 

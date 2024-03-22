@@ -1,12 +1,10 @@
 package com.maxicorrea.github.applicationdollarbackend.domain;
 
-import java.math.BigDecimal;
-
 public class Dollar {
 
   private String name;
-  private BigDecimal valuePurchase;
-  private BigDecimal valueSale;
+  private Price valuePurchase;
+  private Price valueSale;
 
   public String getName() {
     return name;
@@ -16,20 +14,20 @@ public class Dollar {
     this.name = name;
   }
 
-  public BigDecimal getValuePurchase() {
+  public Price getValuePurchase() {
     return valuePurchase;
   }
 
-  public void setValuePurchase(BigDecimal valuePurchase) {
-    this.valuePurchase = valuePurchase;
+  public void setValuePurchase(Price price) {
+    this.valuePurchase = price;
   }
 
-  public BigDecimal getValueSale() {
+  public Price getValueSale() {
     return valueSale;
   }
 
-  public void setValueSale(BigDecimal valueSale) {
-    this.valueSale = valueSale;
+  public void setValueSale(Price price) {
+    this.valueSale = price;
   }
 
 }

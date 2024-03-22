@@ -1,9 +1,10 @@
 package com.maxicorrea.github.applicationdollarbackend.application.ports.output;
 
-import com.maxicorrea.github.applicationdollarbackend.domain.Home;
+import java.util.List;
+import com.maxicorrea.github.applicationdollarbackend.domain.Dollar;
 
 public interface RetriveHomeOutputPort {
 
-  Home execute();
+  List<Dollar> execute();
   
 }
