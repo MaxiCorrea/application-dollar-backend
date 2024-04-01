@@ -22,8 +22,8 @@ public class ApplicationDollarBackendApplication {
 
   @Bean
   public OpenAPI apiInfo() {
-    return new OpenAPI().info(new Info().title("Application Desktop Backend")
-        .description("Application Desktop Documentation").version(applicationVersion));
+    return new OpenAPI().info(new Info().title("Application Dollar Backend")
+        .description("Application Dollar Documentation").version(applicationVersion));
   }
 
   @Bean
