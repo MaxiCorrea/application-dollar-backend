@@ -32,3 +32,14 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### ENV vars ###
+.env
+
+# Render Deploy
+target/classes 
+target/maven-status
+target/surefire-reports
+target/test-classes
+target/maven-archiver 
+
